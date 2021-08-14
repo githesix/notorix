@@ -1,0 +1,12 @@
+@import "tailwindcss/base";
+@import "./tailwindcss/custom-base.css";
+
+@import "tailwindcss/components";
+@import "./tailwindcss/custom-components.css";
+
+@import "tailwindcss/utilities";
+@import "./tailwindcss/custom-utilities.css";
+
+@import "notyf/notyf.min.css";
+
+@import "pikaday/css/pikaday.css";

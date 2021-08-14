@@ -1,0 +1,1 @@
+<button class="text-primary hover:bg-primary hover:text-white p-1 rounded" title="{{ __('Edit') }}" wire:click='$emit("openModal", "bo-modal-edit-user", {{ json_encode(["id" => $id]) }})'><x-icons.pencil /></button>

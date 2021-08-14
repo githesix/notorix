@@ -1,0 +1,200 @@
+@import "notyf/notyf.min.css";
+
+@import "pikaday/css/pikaday.css";
+
+@tailwind base;
+
+@tailwind components;
+  
+@tailwind utilities;
+
+
+@layer base {
+/*
+Chargement des polices additionnelles, sans rien dire aux serveurs de Google
+*/
+/* 
+    Created on : 15-août-2017, 17:12:58
+    Author     : lsd
+*/
+
+@font-face {
+	font-family:Raleway;
+	font-style:normal;
+	font-weight:300;
+	src:url(/fonts/raleway-v11-latin-300.eot);
+	src:local("Raleway Light"),local("Raleway-Light"),url(/fonts/raleway-v11-latin-300.eot?#iefix) format("embedded-opentype"),url(/fonts/raleway-v11-latin-300.woff2) format("woff2"),url(/fonts/raleway-v11-latin-300.woff) format("woff"),url(/fonts/raleway-v11-latin-300.ttf) format("truetype"),url(/fonts/raleway-v11-latin-300.svg#Raleway) format("svg")
+}
+@font-face {
+	font-family:Raleway;
+	font-style:normal;
+	font-weight:400;
+	src:url(/fonts/raleway-v11-latin-regular.eot);
+	src:local("Raleway"),local("Raleway-Regular"),url(/fonts/raleway-v11-latin-regular.eot?#iefix) format("embedded-opentype"),url(/fonts/raleway-v11-latin-regular.woff2) format("woff2"),url(/fonts/raleway-v11-latin-regular.woff) format("woff"),url(/fonts/raleway-v11-latin-regular.ttf) format("truetype"),url(/fonts/raleway-v11-latin-regular.svg#Raleway) format("svg")
+}
+@font-face {
+	font-family:Raleway;
+	font-style:normal;
+	font-weight:600;
+	src:url(/fonts/raleway-v11-latin-600.eot);
+	src:local("Raleway SemiBold"),local("Raleway-SemiBold"),url(/fonts/raleway-v11-latin-600.eot?#iefix) format("embedded-opentype"),url(/fonts/raleway-v11-latin-600.woff2) format("woff2"),url(/fonts/raleway-v11-latin-600.woff) format("woff"),url(/fonts/raleway-v11-latin-600.ttf) format("truetype"),url(/fonts/raleway-v11-latin-600.svg#Raleway) format("svg")
+}
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/open-sans-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('/fonts/open-sans-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/open-sans-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/open-sans-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/open-sans-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/open-sans-v14-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+
+/* lobster-two-regular - latin */
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster Two'), local('LobsterTwo'),
+       url('/fonts/lobster-two-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/lobster-two-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lobster-two-700 - latin */
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lobster Two Bold'), local('LobsterTwo-Bold'),
+       url('/fonts/lobster-two-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/lobster-two-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/*
+* Ajouté le 02.11.2020
+*/
+/* nunito-regular - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/nunito-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Nunito Regular'), local('Nunito-Regular'),
+       url('/fonts/nunito-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/nunito-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/nunito-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/nunito-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/nunito-v14-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+/* nunito-600 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/fonts/nunito-v14-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'),
+       url('/fonts/nunito-v14-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/nunito-v14-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/nunito-v14-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/nunito-v14-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/nunito-v14-latin-600.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+/* nunito-700 - latin */
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/nunito-v14-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Nunito Bold'), local('Nunito-Bold'),
+       url('/fonts/nunito-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/nunito-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/nunito-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/nunito-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/nunito-v14-latin-700.svg#Nunito') format('svg'); /* Legacy iOS */
+}
+
+/* livewireDatatable x-cloak */
+[x-cloak] {
+  display: none !important;
+}
+}
+
+@layer components {
+.btn {
+    @apply font-bold py-2 px-4 rounded inline-block box-content;
+  }
+  .btn-acier {
+    @apply bg-acier text-white;
+  }
+  .btn-acier:hover {
+    @apply bg-bleuis;
+  }
+  .btn-bleuis {
+    @apply bg-bleuis-500 text-white;
+  }
+  .btn-bleuis:hover {
+    @apply bg-bleuis-700;
+  }
+  .btn-orangis {
+    @apply bg-orangis-500 text-bleuis;
+  }
+  .btn-orangis:hover {
+    @apply bg-orangis-700 text-white;
+  }
+  .btn-rougis {
+    @apply bg-rougis-500 text-white;
+  }
+  .btn-rougis:hover {
+    @apply bg-rougis-700;
+  }
+  .btn-verger {
+    @apply bg-verger text-current;
+  }
+  .btn-verger:hover {
+    @apply bg-shamrock text-white;
+  }
+  .btn-shamrock {
+    @apply bg-shamrock text-white;
+  }
+  .btn-shamrock:hover {
+    @apply bg-verger text-current;
+  }  
+}
+
+@layer utilities {
+@responsive {
+    .animate-zoom {animation:animatezoom 0.6s;}
+    .animate-top {animation:animatetop 0.6s;} 
+    .animate-bottom {animation:animatebottom 0.6s;}
+    .animate-left {animation:animateleft 0.6s;} 
+    .animate-right {animation:animateright 0.6s;}
+  }
+  @keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+  @keyframes animatetop{from{transform: translateY(-100%);opacity: 0;} to{transform: translateY(0%); opacity: 1;}}
+  @keyframes animatebottom{from{transform: translateY(200%);opacity: 0;} to{transform: translateY(0%); opacity: 1;}}
+  @keyframes animateleft{from{transform: translateX(-100%);opacity: 0;} to{transform: translateX(0%); opacity: 1;}}
+  @keyframes animateright{from{transform: translateX(200%);opacity: 0;} to{transform: translateX(0%); opacity: 1;}}
+  
+  .text-current {color: currentColor;}
+
+  @variants responsive {
+    .text-shadow {
+      text-shadow: 2px 2px 4px black;
+    }
+    .text-shadow-md {
+      text-shadow: 4px 4px 8px black;
+    }
+    .text-shadow-lg {
+      text-shadow: 15px 15px 30px black;
+    }
+    .text-shadow-none {
+      text-shadow: none;
+    }
+} 
+}

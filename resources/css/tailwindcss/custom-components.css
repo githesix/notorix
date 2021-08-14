@@ -1,0 +1,41 @@
+@tailwind components;
+
+.btn {
+    @apply font-bold py-2 px-4 rounded inline-block box-content;
+  }
+  .btn-acier {
+    @apply bg-acier text-white;
+  }
+  .btn-acier:hover {
+    @apply bg-bleuis;
+  }
+  .btn-bleuis {
+    @apply bg-bleuis-500 text-white;
+  }
+  .btn-bleuis:hover {
+    @apply bg-bleuis-700;
+  }
+  .btn-orangis {
+    @apply bg-orangis-500 text-bleuis;
+  }
+  .btn-orangis:hover {
+    @apply bg-orangis-700 text-white;
+  }
+  .btn-rougis {
+    @apply bg-rougis-500 text-white;
+  }
+  .btn-rougis:hover {
+    @apply bg-rougis-700;
+  }
+  .btn-verger {
+    @apply bg-verger text-current;
+  }
+  .btn-verger:hover {
+    @apply bg-shamrock text-white;
+  }
+  .btn-shamrock {
+    @apply bg-shamrock text-white;
+  }
+  .btn-shamrock:hover {
+    @apply bg-verger text-current;
+  }
