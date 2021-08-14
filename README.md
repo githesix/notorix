@@ -158,7 +158,7 @@ For production, it is advisable to use a proper web server providing:
 
 1. Install Notorix
 	```sh
-	composer require notorix/notorix
+	composer create-project notorix/notorix
 	```
 2. Generate secure key
 	```sh
