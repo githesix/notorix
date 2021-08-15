@@ -8,7 +8,6 @@
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
-        "githesix/notorix-exim": "dev-master",
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/validation": "^2.9",
         "ircmaxell/random-lib": "^1.2",
@@ -70,12 +69,6 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../packages/*"
-        }
-    ],
     "minimum-stability": "dev",
     "prefer-stable": true
 }
