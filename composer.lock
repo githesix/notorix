@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed1cfd863ad0f0f43c74396750877af0",
+    "content-hash": "83e2f24a43b8a3e7f7273f7522995b2a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -983,71 +983,6 @@
                 }
             ],
             "time": "2021-04-26T11:24:25+00:00"
-        },
-        {
-            "name": "githesix/notorix-exim",
-            "version": "dev-master",
-            "dist": {
-                "type": "path",
-                "url": "../packages/notorix-exim",
-                "reference": "54b8ef505c33caa43795f7389614676a3a2b0642"
-            },
-            "require": {
-                "illuminate/support": "^8.0",
-                "php": "^7.4|^8.0"
-            },
-            "require-dev": {
-                "orchestra/testbench": "^6.0",
-                "phpunit/phpunit": "^9.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Githesix\\NotorixExim\\NotorixEximServiceProvider"
-                    ],
-                    "aliases": {
-                        "NotorixExim": "Githesix\\NotorixExim\\NotorixEximFacade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Githesix\\NotorixExim\\": "src"
-                }
-            },
-            "autoload-dev": {
-                "psr-4": {
-                    "Githesix\\NotorixExim\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ],
-                "test-coverage": [
-                    "vendor/bin/phpunit --coverage-html coverage"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Thesis",
-                    "email": "devls@the6.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Integrate and manage a self-hosted exim (e-mail) server with Notorix",
-            "homepage": "https://github.com/githesix/notorix-exim",
-            "keywords": [
-                "githesix",
-                "notorix-exim"
-            ],
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "graham-campbell/result-type",
@@ -10986,14 +10921,12 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "githesix/notorix-exim": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.0.0"
 }
