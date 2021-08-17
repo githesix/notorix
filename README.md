@@ -172,6 +172,7 @@ For production, it is advisable to use a proper web server providing:
      sudo chmod -R ug+rwx storage bootstrap/cache
     ```
 5. Edit `/resources/markdown/policy.md` and `/resources/markdown/terms.md` to your liking
+6. Create a first user with admin privileges: `php artisan create:adminuser`
 
 
 <!-- USAGE EXAMPLES -->
