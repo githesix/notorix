@@ -6,7 +6,7 @@ use App\Events\UserDeleted;
 use App\Http\Traits\BitwiseTrait;
 use App\Mail\InvitationPreinscription;
 use App\Maison\UUID;
-use Githesix\NotorixExim\Http\Traits\EximUserTrait; // Uncomment this line for NotorixExim package to work
+// use Githesix\NotorixExim\Http\Traits\EximUserTrait; // Uncomment this line for NotorixExim package to work
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -28,7 +28,7 @@ class User extends Authenticatable implements MustVerifyEmail
     use TwoFactorAuthenticatable;
     use SoftDeletes;
     use BitwiseTrait;
-    use EximUserTrait; // Uncomment this line for NotorixExim package to work
+    // use EximUserTrait; // Uncomment this line for NotorixExim package to work
 
     /**
      * The attributes that are mass assignable.
