@@ -21,8 +21,8 @@ class NotoriseUsersTable extends Migration
             $table->string('sexe', 8)->nullable()->default(null)->comment('H/F');
             $table->string('prenom', 100)->nullable()->default(null)->comment('First name');
             $table->string('nom', 100)->comment('Family name required');
-            $table->string('tel1', 16)->comment('Main phone number');
-            $table->string('tel2', 16)->comment('Backup phone number');
+            $table->string('tel1', 16)->nullable()->comment('Main phone number');
+            $table->string('tel2', 16)->nullable()->comment('Backup phone number');
             $table->string('ou', 45)->nullable()->default(null)->comment('Organizational Unit (for inst. ARCProf)');
             $table->text('memo')->nullable()->default(null)->comment('Coord, tel...');
             $table->integer('role')->nullable()->default(null);
