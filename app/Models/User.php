@@ -86,7 +86,7 @@ class User extends Authenticatable implements MustVerifyEmail
     |    0 |     1 |     2 |      4 |          8 |   16 |   32 | 64 |   128 | 256 |
     | User | Guest | Élève | Parent | Resp (dyn) | Prof | Educ |    | Admin |     |
     */
-    protected $bitroles = [/* 1 => 'Active', */ 2 => 'Student', 4 => 'Parent', 16 => 'Teacher', 32 => 'Educator', 128 => 'Administrator'];
+    protected $bitroles = [ 1 => 'Active', 2 => 'Student', 4 => 'Parent', 16 => 'Teacher', 32 => 'Educator', 128 => 'Administrator'];
 
     /**
      * The event map for the model.

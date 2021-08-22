@@ -21,6 +21,7 @@ class BoUsers extends LivewireDatatable
     protected $listeners = ['resetPassword', 'fieldEdited', 'forcerefreshLivewireDatatable', 'resendemailverif', 'refreshGroups'];
     public $filters = [
         'Unverified' => [false, 'email_verified_at', '=', null],
+        'Invited' => [false, 'role', '=', 0],
         'Student' => [false, 'role', '&', 2],
         'Parent' => [false, 'role', '&', 4],
         'Teacher' => [false, 'role', '&', 16],
@@ -103,7 +104,7 @@ class BoUsers extends LivewireDatatable
             Column::callback(['id', 'role', 'statut', 'deleted_at'], function ($id, $role, $statut, $trashed) {
                 $user = User::withTrashed()->find($id);
                 $roles = $user->roles;
-                return view('partials.boedituserrole', ['roles' => $roles, 'statut' => $statut, 'trashed' => $trashed]);
+                return view('partials.boedituserrole', ['id' => $user->id, 'r' => $user->role, 'roles' => $roles, 'statut' => $statut, 'trashed' => $trashed]);
             })
             ->label(__('Role & status')),
 
@@ -169,6 +170,14 @@ class BoUsers extends LivewireDatatable
         foreach ($this->groupes as $groupe) {
             $this->groupFilters[$groupe->id] = false;
         }
+    }
+
+    public function activate($id)
+    {
+        $this->init();
+        $user = User::find($id);
+        $user->setRole(1,1);
+        $user->save();
     }
 
     /**

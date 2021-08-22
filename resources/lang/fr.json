@@ -796,6 +796,8 @@
   "Attention! :user will have to verify :email address before next login": "Attention! :user devra vérifier l'adresse :email avant sa prochaine connexion",
   ":admin cancelled email verification for :user (:email)": ":admin a annulé la vérification d'email de :user (:email)",
   "Active": "Actif(ve)",
+  "Activate": "Activer",
+  "Invited": "Invité(e)",
   "Student": "Élève",
   "Parent": "Parent",
   "Teacher": "Enseignant(e)",
