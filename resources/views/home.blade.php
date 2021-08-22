@@ -23,16 +23,7 @@
         @endif
 
         @if (auth()->user()->role == 1)
-            <x-pave title="{{ __('Welcome :firstname', ['firstname' => $u->prenom])}}" bg="bg-secondary-200" colors="bg-secondary text-white border-secondary">
-                <div class="">
-                    <p class="text-lg font-bold">Statut&nbsp;: @mf("invité|invitée")</p>
-                    <p>{{ __('A very good start!') }}</p>
-                    <p class="mt-2 text-center">
-                        <a href="{{ route('eleve') }}" class="btn btn-orangis m-1">{{ __("I'm student / parent") }}</a>
-                        <a href="{{ route('prof') }}" class="btn btn-orangis m-1">{{ __("I'm teacher / educator") }}</a>
-                    </p>
-                </div>
-            </x-pave>
+            <livewire:fo-pave-guest />
         @endif
 
         @if (auth()->user()->role > 3)
