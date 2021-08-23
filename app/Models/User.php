@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Laravel\Fortify\TwoFactorAuthenticatable;
@@ -359,16 +360,21 @@ class User extends Authenticatable implements MustVerifyEmail
         $memomerge = $memo ?? null;
         $existuser = User::where('email', $email)->first();
         if ($existuser) {
+            $action = [];
             if (isset($memomerge)) {
                 $existuser->memoMerge($memomerge);
                 $existuser->save();
+                $action[]='memomerge';
             }
             if (!$existuser->email_verified_at) {
                 Mail::to($existuser)->send(new InvitationPreinscription($existuser));
+                $action[]='mailresend';
             }
             if(isset($groupeid) && !$existuser->estMembreDe($groupeid)) {
                 $existuser->groupes()->attach($groupeid);
+                $action[]='groupattach';
             }
+            info(__('Preregistration: :user updates :name (:email) :actions', ['user' => auth()->user()->name ?? 'System', 'name' => $existuser->name, 'email' => $email, 'actions' => implode(', ', $action)]));
             return ["success" => __("User :name updated", ['name' => $existuser->name])];
         } else {
             // Pre-user creation
@@ -390,6 +396,7 @@ class User extends Authenticatable implements MustVerifyEmail
             $user->save();
             Mail::to($user)->send(new InvitationPreinscription($user));
             $user->groupes()->attach($groupeid);
+            info(__('Preregistration: :user creates :name (:email)', ['user' => auth()->user()->name ?? 'System', 'name' => $user->name, 'email' => $email]));
             return ["success" => __("User account preregistered and invited")];
         }
     }

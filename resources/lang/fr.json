@@ -899,6 +899,8 @@
   "Notorix centralizes the identification data, and gives you access to all the digital services of the school.": "Notorix centralise les données d'identification, et vous donne accès à tous les services numériques de l'athénée.",
   "The «Confirm» button does not work? Copy and paste this link into your browser:": "Le bouton «Confirmer» ne fonctionne pas? Copiez-collez ce lien dans votre navigateur:",
   "Any question?": "Des questions?",
+  "Preregistration: :user updates :name (:email) :actions": "Préinscription: :user met à jour :name (:email)",
+  "Preregistration: :user creates :name (:email)": "Préinscription: :user crée :name (:email)",
   "Contact :school IT service": "Contactez le service informatique de :school",
   "Made with :love by :thesis :date": "Conçu avec :love par :thesis :date"
 }
