@@ -67,7 +67,7 @@ class UserEventSubscriber
             $alias->save();
         }*/
         $user->save();
-        info(__('Address :email confirmed for :user', ['email' => $email, 'user' => $user->name]));
+        info(__('Address :email confirmed for :user', ['email' => $user->email, 'user' => $user->name]));
     }
 
     /**
