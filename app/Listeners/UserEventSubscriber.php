@@ -16,8 +16,8 @@ class UserEventSubscriber
      * Handle user login events.
      */
     public function onUserLogin($event) {
-        $email = $event->user->email;
-        $name = $event->user->name;
+        $email = $event->user->email ?? 'nomail@localhost';
+        $name = $event->user->name ?? 'no name';
         info(__('Login of :user', ['user' => "$name ($email)"]));
     }
 
@@ -25,8 +25,8 @@ class UserEventSubscriber
      * Handle user logout events.
      */
     public function onUserLogout($event) {
-        $email = $event->user->email;
-        $name = $event->user->name;
+        $email = $event->user->email ?? 'nomail@localhost';
+        $name = $event->user->name ?? 'no name';
         info(__('Logout of :user', ['user' => "$name ($email)"]));
     }
     /**
