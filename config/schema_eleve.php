@@ -1062,7 +1062,7 @@
     'validation' => 'nullable|string',
   ],
   'type_responsable_2' => [
-    'libel' => 'Type responsable 1',
+    'libel' => 'Type responsable 2',
     'type' => 'select',
     'print' => 1,
     'brol' => 0,
