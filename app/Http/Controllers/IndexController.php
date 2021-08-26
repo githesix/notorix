@@ -74,7 +74,7 @@ class IndexController extends Controller
         }
         if (!is_null($user->statut)) {
             info(__('Preregister link clicked for :user', ['user' => $user->name]));
-            return redirect()->route('dashboard');
+            return redirect()->route('home');
         }
         return view('auth.confirm_preregistration', ['user' => $user, 'request' => $request]);
     }
@@ -99,6 +99,6 @@ class IndexController extends Controller
             $user->username = $request->input('email');
         }
         $user->save();
-        return redirect()->route('dashboard');
+        return redirect()->route('home');
     }
 }
