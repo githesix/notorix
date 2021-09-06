@@ -15,6 +15,7 @@ use Mediconesystems\LivewireDatatables\Column;
 use Mediconesystems\LivewireDatatables\Http\Livewire\LivewireDatatable;
 use Mediconesystems\LivewireDatatables\NumberColumn;
 use Illuminate\Support\Str;
+use PhpOffice\PhpSpreadsheet\Shared\Date;
 
 class BoUsers extends LivewireDatatable
 {
@@ -274,6 +275,7 @@ class BoUsers extends LivewireDatatable
                 __('First name') => $r['prenom'],
                 __('Last name') => $r['nom'],
                 __('Email') => $r['email'],
+                __('Verified') => $r['email_verified_at'] ? '1' : '0',
                 __('Phone 1') => $r['tel1'],
                 __('Phone 2') => $r['tel2'],
                 __('Groups') => $r['groupes']->implode('nom', '|'),
