@@ -331,6 +331,7 @@
                     var csv = [
                         ["Action", "Prénom", "Nom", "Classe"]
                     ];
+                    that = this;
                     if (this.eleves.nouveaux.length > 0) {
                         this.eleves.nouveaux.forEach(function(e) {
                             csv.push(['ajout', e.prenom, e.nom, that.ac[that.rc[e.classe_ref]]
