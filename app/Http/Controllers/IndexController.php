@@ -42,6 +42,7 @@ class IndexController extends Controller
      *     'email' => 'aline.laboury@nomail.dev',
      *     'role' => null,
      *     'groupe' => null,
+     *     'groupe_description' => null,
      *   ),
      *   'bleuid' => null,
      * )

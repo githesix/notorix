@@ -11,6 +11,10 @@ class Groupe extends Model
     use HasFactory;
     use BitwiseTrait;
 
+    protected $fillable = [
+        'nom', 'description',
+    ];
+
     public function users()
     {
         return $this->belongsToMany(User::class);

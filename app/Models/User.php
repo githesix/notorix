@@ -350,13 +350,23 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->memo;
     }
     
+    /**
+     * Pre-registers a new user and sends an invitation by e-mail
+     * $preuser is an array with usual User fields
+     * + 'groupe' => groupe name to attach to user
+     * + 'groupe_description' => groupe description
+     */
     public static function preRegister($preuser)
     {
         extract($preuser, EXTR_SKIP);
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             return ["error" => __('validation.email', ['attribute' => $email])];
         }
-        $groupeid = isset($groupe) ? Groupe::where('nom', $groupe)->first()->id : null;
+        $groupeid = isset($groupe) ? 
+        Groupe::firstOrCreate(['nom' => $groupe], [
+            'description' => isset($groupe_description) ? $groupe_description : ''
+            ])->id : null;
+        //$groupeid = isset($groupe) ? Groupe::where('nom', $groupe)->first()->id : null;
         $memomerge = $memo ?? null;
         $existuser = User::where('email', $email)->first();
         if ($existuser) {
