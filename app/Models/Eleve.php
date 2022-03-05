@@ -120,14 +120,12 @@ class Eleve extends Model
                     }
                 } else {
                     if (isset($brut[$champ])) {
-                        if ($v['type'] == 'date d/m/Y') {
+                        if ($v['type'] == 'date') {
                             // ATTENTION DateTime attend une date américaine si elle contient des slashes (m/d/Y)
                             // Je ne sais pas comment j'ai importé d'autres dates avant sans avoir d'erreurs
                             //$this->$champ = \Carbon\Carbon::parse($brut[$champ]);
                             // Il faut spécifier le format à Carbon (qui appelle DateTime::__construct)
-                            $this->$champ = \Carbon\Carbon::createFromFormat('d/m/Y', $brut[$champ]);
-                        } else if ($v['type'] == 'date Y/m/d') {
-                            $this->$champ = \Carbon\Carbon::createFromFormat('Y/m/d', $brut[$champ]);
+                            $this->$champ = \Carbon\Carbon::createFromFormat($v['format'] ?? 'd/m/Y', $brut[$champ]);
                         } else {
                             $this->$champ=$brut[$champ];
                         }
