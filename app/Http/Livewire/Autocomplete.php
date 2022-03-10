@@ -19,6 +19,9 @@ abstract class Autocomplete extends Component
         $this->results = collect();
     }
 
+    /**
+     * Called whenever selected is updated (Livewire lifecycle hooks)
+     */
     public function updatedSelected()
     {
         $this->emitSelf('valueSelected', $this->selected);
