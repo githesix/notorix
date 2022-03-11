@@ -11,6 +11,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "intervention/validation": "^2.9",
         "ircmaxell/random-lib": "^1.2",
+        "joshhanley/livewire-autocomplete": "^0.1.7",
         "laravel-notification-channels/webpush": "^5.1",
         "laravel/framework": "^8.40",
         "laravel/jetstream": "^2.3",
