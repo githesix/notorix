@@ -18,7 +18,7 @@
         "laravel/passport": "^10.1",
         "laravel/sanctum": "^2.6",
         "laravel/tinker": "^2.5",
-        "livewire-ui/modal": "^1.0",
+        "wire-elements/modal": "^1.0",
         "livewire/livewire": "^2.5",
         "maatwebsite/excel": "^3.1",
         "mediconesystems/livewire-datatables": "^0.5.1",
