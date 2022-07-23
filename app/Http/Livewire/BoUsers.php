@@ -264,7 +264,7 @@ class BoUsers extends LivewireDatatable
         return '%' . strtolower($s) . '%';
     }
 
-    public function export()
+    public function export(string $filename = 'exportix.xlsx')
     {
         $this->forgetComputed();
         $results = $this->prepareExport();
