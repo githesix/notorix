@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Events\UserDeleted;
+use App\Events\UserUpdated;
 use App\Http\Traits\BitwiseTrait;
 use App\Mail\InvitationPreinscription;
 use App\Maison\UUID;
@@ -96,6 +97,7 @@ class User extends Authenticatable implements MustVerifyEmail
      */
     protected $dispatchesEvents = [
         'deleted' => UserDeleted::class, // e-mail scrambling for further registration
+        'updated' => UserUpdated::class,
     ];
 
     /**

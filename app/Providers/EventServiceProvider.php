@@ -8,6 +8,9 @@ use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvi
 use Illuminate\Support\Facades\Event;
 use App\Events\UserDeleted;
 use App\Listeners\DeletedUser;
+use App\Events\UserUpdated;
+use App\Listeners\UpdatedUser;
+use App\Listeners\UserEventSubscriber;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -22,6 +25,9 @@ class EventServiceProvider extends ServiceProvider
         ],
         UserDeleted::class => [
             DeletedUser::class,
+        ],
+        UserUpdated::class => [
+            UpdatedUser::class,
         ],
     ];
 
@@ -41,6 +47,6 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $subscribe = [
-        'App\Listeners\UserEventSubscriber',
+        UserEventSubscriber::class,
     ];
 }

@@ -5,6 +5,10 @@ namespace App\Listeners;
 use App\Models\Account;
 use App\Models\Alias;
 use App\Maison\Calculs;
+use Illuminate\Auth\Events\Login;
+use Illuminate\Auth\Events\Logout;
+use Illuminate\Auth\Events\PasswordReset;
+use Illuminate\Auth\Events\Verified;
 
 /*
  * User access events listeners
@@ -77,25 +81,12 @@ class UserEventSubscriber
      */
     public function subscribe($events)
     {
-        $events->listen(
-            'Illuminate\Auth\Events\Login',
-            'App\Listeners\UserEventSubscriber@onUserLogin'
-        );
-
-        $events->listen(
-            'Illuminate\Auth\Events\Logout',
-            'App\Listeners\UserEventSubscriber@onUserLogout'
-        );
-
-        /*$events->listen(
-            'Illuminate\Auth\Events\PasswordReset',
-            'App\Listeners\UserEventSubscriber@onPasswordReset'
-        );*/
-        // E-mail vérifié
-        $events->listen(
-            'Illuminate\Auth\Events\Verified',
-            'App\Listeners\UserEventSubscriber@onVerified'
-        );
+        return [
+            Login::class => 'onUserLogin',
+            Logout::class => 'onUserLogout',
+            // PasswordReset::class => 'onPasswordReset',
+            Verified::class => 'onVerified',
+        ];
     }
     /*
      * En plus de Login et Logout, Illuminate\Auth\Events\* propose:
