@@ -152,7 +152,7 @@ class User extends Authenticatable implements MustVerifyEmail
         $roles = [];
         foreach ($this->bitroles as $bit => $role) {
             if ($this->hasRole($bit)) {
-                $roles[] = $role;
+                $roles[] = __($role);
             }
         }
         return $roles;
