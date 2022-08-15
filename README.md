@@ -13,9 +13,8 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Multilanguage README Pattern
-[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/githesix/notorix/blob/master/README.md)
-[![fr](https://img.shields.io/badge/lang-fr-blue.svg)](https://github.com/githesix/notorix/blob/master/README.fr.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/githesix/notorix/blob/main/README.md)
+[![fr](https://img.shields.io/badge/lang-fr-blue.svg)](https://github.com/githesix/notorix/blob/main/README.fr.md)
 
 <!-- PROJECT LOGO -->
 <br />
