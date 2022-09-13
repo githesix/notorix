@@ -193,7 +193,10 @@ class Siel {
         $intermatricules = $dbmatricules->intersect($matricules);
         $nouveaux = $tableau->whereIn('matricule', $nouveauxmatricules)->values();
         $deletes = \App\Models\Eleve::whereIn('matricule', $anciensmatricules)->get();
-        $dbacomparer = \App\Models\Eleve::whereIn('matricule', $intermatricules)->with('classe')->withTrashed()->get();
+        // @TODO clean this comment after some testing (13.09.2022)
+        // whereIn replaced by whereRaw to avoid mariadb limit of 1000 arguments where in (?,?,?,.....999...?)
+        // $dbacomparer = \App\Models\Eleve::whereIn('matricule', $intermatricules)->with('classe')->withTrashed()->get();
+        $dbacomparer = \App\Models\Eleve::whereRaw('matricule in ('.implode(',', $intermatricules->toArray()).')')->with('classe')->withTrashed()->get();
         $tabacomparer = $tableau->whereIn('matricule', $intermatricules);
         // classe.ref indexé par matricule, p. ex.: 5890826 => '1 D2 3 G ="H"'
         $dbclassesacomparer = $dbacomparer->pluck('classe.ref', 'matricule');

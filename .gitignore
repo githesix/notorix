@@ -15,3 +15,5 @@ yarn-error.log
 /.idea
 /.vscode
 arcdeploy.sh
+config/samlidp.php
+storage/samlidp/
