@@ -6,6 +6,7 @@
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
+        "codegreencreative/laravel-samlidp": "^5.2",
         "guzzlehttp/guzzle": "^7.2",
         "intervention/validation": "^3.2",
         "ircmaxell/random-lib": "^1.2",

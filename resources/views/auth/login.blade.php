@@ -39,6 +39,7 @@
 
                     <form method="POST" action="{{ route('login') }}" class="sm:w-2/3 w-full px-4 lg:px-0 mx-auto">
                         @csrf
+                        @samlidp
                         <div>
                             {{-- <x-jet-label for="email" value="{{ __('Email') }}" /> --}}
                             <x-jet-input id="email" class="block mt-1 w-full p-4 text-lg rounded-sm bg-primary-800 placeholder-primary-300" type="email" name="email" placeholder="{{ __('Email') }}" :value="old('email')" required autofocus />
