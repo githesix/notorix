@@ -41,10 +41,10 @@ class IndexController extends Controller
      *     'nom' => 'Laboury',
      *     'email' => 'aline.laboury@nomail.dev',
      *     'role' => null,
+     *     'memo' => ['bleuasso' => [$id]],
      *     'groupe' => null,
      *     'groupe_description' => null,
      *   ),
-     *   'bleuid' => null,
      * )
      * @return void
      * Test with curl: 

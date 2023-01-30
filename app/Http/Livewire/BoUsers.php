@@ -96,7 +96,7 @@ class BoUsers extends LivewireDatatable
             ->filterable()
             ->searchable(), */
 
-            Column::name('users.email')
+            Column::name('users.username')
             ->filterable()
             ->searchable()
             ->editable()
@@ -139,7 +139,8 @@ class BoUsers extends LivewireDatatable
     {
         $user = User::find($id);
         $user->name = $user->prenom . " " . $user->nom;
-        $user->username = $user->email;
+        // Not necessary thanks to User::setUsernameAttribute
+        // $user->email = $user->username;
         $user->save();
         $this->init();
     }
