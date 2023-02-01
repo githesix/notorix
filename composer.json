@@ -21,6 +21,7 @@
         "maatwebsite/excel": "^3.1",
         "mediconesystems/livewire-datatables": "^0.9.5",
         "predis/predis": "^2.0",
+        "simplesoftwareio/simple-qrcode": "~4",
         "wire-elements/modal": "^1.0"
     },
     "require-dev": {

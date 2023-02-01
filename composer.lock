@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6b5f24d52a8e31b8c268da2d61bba4cc",
+    "content-hash": "2671075fa01bbaed7600bb0cf00eda97",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -62,26 +62,25 @@
         },
         {
             "name": "brick/math",
-            "version": "0.10.2",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f"
+                "reference": "0ad82ce168c82ba30d1c01ec86116ab52f589478"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/459f2781e1a08d52ee56b0b1444086e038561e3f",
-                "reference": "459f2781e1a08d52ee56b0b1444086e038561e3f",
+                "url": "https://api.github.com/repos/brick/math/zipball/0ad82ce168c82ba30d1c01ec86116ab52f589478",
+                "reference": "0ad82ce168c82ba30d1c01ec86116ab52f589478",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
-                "php": "^7.4 || ^8.0"
+                "php": "^8.0"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2.2",
                 "phpunit/phpunit": "^9.0",
-                "vimeo/psalm": "4.25.0"
+                "vimeo/psalm": "5.0.0"
             },
             "type": "library",
             "autoload": {
@@ -106,7 +105,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.10.2"
+                "source": "https://github.com/brick/math/tree/0.11.0"
             },
             "funding": [
                 {
@@ -114,7 +113,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-10T22:54:19+00:00"
+            "time": "2023-01-15T23:15:59+00:00"
         },
         {
             "name": "codegreencreative/laravel-samlidp",
@@ -794,6 +793,82 @@
                 "source": "https://github.com/ezyang/htmlpurifier/tree/v4.16.0"
             },
             "time": "2022-09-18T07:06:19+00:00"
+        },
+        {
+            "name": "fgrosse/phpasn1",
+            "version": "v2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fgrosse/PHPASN1.git",
+                "reference": "42060ed45344789fb9f21f9f1864fc47b9e3507b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fgrosse/PHPASN1/zipball/42060ed45344789fb9f21f9f1864fc47b9e3507b",
+                "reference": "42060ed45344789fb9f21f9f1864fc47b9e3507b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1 || ^8.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "~2.0",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
+            },
+            "suggest": {
+                "ext-bcmath": "BCmath is the fallback extension for big integer calculations",
+                "ext-curl": "For loading OID information from the web if they have not bee defined statically",
+                "ext-gmp": "GMP is the preferred extension for big integer calculations",
+                "phpseclib/bcmath_compat": "BCmath polyfill for servers where neither GMP nor BCmath is available"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FG\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Friedrich Große",
+                    "email": "friedrich.grosse@gmail.com",
+                    "homepage": "https://github.com/FGrosse",
+                    "role": "Author"
+                },
+                {
+                    "name": "All contributors",
+                    "homepage": "https://github.com/FGrosse/PHPASN1/contributors"
+                }
+            ],
+            "description": "A PHP Framework that allows you to encode and decode arbitrary ASN.1 structures using the ITU-T X.690 Encoding Rules.",
+            "homepage": "https://github.com/FGrosse/PHPASN1",
+            "keywords": [
+                "DER",
+                "asn.1",
+                "asn1",
+                "ber",
+                "binary",
+                "decoding",
+                "encoding",
+                "x.509",
+                "x.690",
+                "x509",
+                "x690"
+            ],
+            "support": {
+                "issues": "https://github.com/fgrosse/PHPASN1/issues",
+                "source": "https://github.com/fgrosse/PHPASN1/tree/v2.5.0"
+            },
+            "abandoned": true,
+            "time": "2022-12-19T11:08:26+00:00"
         },
         {
             "name": "firebase/php-jwt",
@@ -1636,16 +1711,16 @@
         },
         {
             "name": "joshhanley/livewire-autocomplete",
-            "version": "v0.1.7",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joshhanley/livewire-autocomplete.git",
-                "reference": "0740a625f3c8de5ff9437d423af95594dcba19f7"
+                "reference": "2d1ea5856191afb25f8ab017ef8e2f8863f0e539"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joshhanley/livewire-autocomplete/zipball/0740a625f3c8de5ff9437d423af95594dcba19f7",
-                "reference": "0740a625f3c8de5ff9437d423af95594dcba19f7",
+                "url": "https://api.github.com/repos/joshhanley/livewire-autocomplete/zipball/2d1ea5856191afb25f8ab017ef8e2f8863f0e539",
+                "reference": "2d1ea5856191afb25f8ab017ef8e2f8863f0e539",
                 "shasum": ""
             },
             "require": {
@@ -1682,9 +1757,9 @@
             ],
             "description": "An autocomplete dropdown for Livewire",
             "support": {
-                "source": "https://github.com/joshhanley/livewire-autocomplete/tree/v0.1.7"
+                "source": "https://github.com/joshhanley/livewire-autocomplete/tree/v0.1.8"
             },
-            "time": "2022-02-09T06:28:34+00:00"
+            "time": "2023-02-01T10:03:00+00:00"
         },
         {
             "name": "laravel-notification-channels/webpush",
@@ -1809,21 +1884,21 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.48.0",
+            "version": "v9.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c78ae7aeb0cbcb1a205050d3592247ba07f5b711"
+                "reference": "e02d9453442ad0a6a2f5dc9df96ea0319d218026"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c78ae7aeb0cbcb1a205050d3592247ba07f5b711",
-                "reference": "c78ae7aeb0cbcb1a205050d3592247ba07f5b711",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/e02d9453442ad0a6a2f5dc9df96ea0319d218026",
+                "reference": "e02d9453442ad0a6a2f5dc9df96ea0319d218026",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.10.2",
-                "doctrine/inflector": "^2.0",
+                "brick/math": "^0.9.3|^0.10.2|^0.11",
+                "doctrine/inflector": "^2.0.5",
                 "dragonmantank/cron-expression": "^3.3.2",
                 "egulias/email-validator": "^3.2.1|^4.0",
                 "ext-mbstring": "*",
@@ -1922,7 +1997,6 @@
                 "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage, and SES mail driver (^3.235.5).",
                 "brianium/paratest": "Required to run tests in parallel (^6.0).",
                 "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.13.3|^3.1.4).",
-                "ext-bcmath": "Required to use the multiple_of validation rule.",
                 "ext-ftp": "Required to use the Flysystem FTP driver.",
                 "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
                 "ext-memcached": "Required to use the memcache cache driver.",
@@ -1994,7 +2068,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-01-17T15:06:19+00:00"
+            "time": "2023-01-31T14:36:47+00:00"
         },
         {
             "name": "laravel/jetstream",
@@ -2210,16 +2284,16 @@
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v1.2.2",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "47afb7fae28ed29057fdca37e16a84f90cc62fae"
+                "reference": "f23fe9d4e95255dacee1bf3525e0810d1a1b0f37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/47afb7fae28ed29057fdca37e16a84f90cc62fae",
-                "reference": "47afb7fae28ed29057fdca37e16a84f90cc62fae",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/f23fe9d4e95255dacee1bf3525e0810d1a1b0f37",
+                "reference": "f23fe9d4e95255dacee1bf3525e0810d1a1b0f37",
                 "shasum": ""
             },
             "require": {
@@ -2266,7 +2340,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "time": "2022-09-08T13:45:54+00:00"
+            "time": "2023-01-30T18:31:20+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -5558,20 +5632,20 @@
         },
         {
             "name": "ramsey/uuid",
-            "version": "4.7.3",
+            "version": "4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ramsey/uuid.git",
-                "reference": "433b2014e3979047db08a17a205f410ba3869cf2"
+                "reference": "25c4faac19549ebfcd3a6a73732dddeb188eaf5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ramsey/uuid/zipball/433b2014e3979047db08a17a205f410ba3869cf2",
-                "reference": "433b2014e3979047db08a17a205f410ba3869cf2",
+                "url": "https://api.github.com/repos/ramsey/uuid/zipball/25c4faac19549ebfcd3a6a73732dddeb188eaf5a",
+                "reference": "25c4faac19549ebfcd3a6a73732dddeb188eaf5a",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.8.8 || ^0.9 || ^0.10",
+                "brick/math": "^0.8.8 || ^0.9 || ^0.10 || ^0.11",
                 "ext-json": "*",
                 "php": "^8.0",
                 "ramsey/collection": "^1.2 || ^2.0"
@@ -5608,6 +5682,7 @@
                 "paragonie/random-lib": "Provides RandomLib for use with the RandomLibAdapter",
                 "ramsey/uuid-doctrine": "Allows the use of Ramsey\\Uuid\\Uuid as Doctrine field type."
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "captainhook": {
@@ -5634,7 +5709,7 @@
             ],
             "support": {
                 "issues": "https://github.com/ramsey/uuid/issues",
-                "source": "https://github.com/ramsey/uuid/tree/4.7.3"
+                "source": "https://github.com/ramsey/uuid/tree/4.x"
             },
             "funding": [
                 {
@@ -5646,7 +5721,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-12T18:13:24+00:00"
+            "time": "2023-01-28T17:00:47+00:00"
         },
         {
             "name": "reedware/laravel-relation-joins",
@@ -5752,6 +5827,74 @@
                 "source": "https://github.com/robrichards/xmlseclibs/tree/3.1.1"
             },
             "time": "2020-09-05T13:00:25+00:00"
+        },
+        {
+            "name": "simplesoftwareio/simple-qrcode",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SimpleSoftwareIO/simple-qrcode.git",
+                "reference": "916db7948ca6772d54bb617259c768c9cdc8d537"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SimpleSoftwareIO/simple-qrcode/zipball/916db7948ca6772d54bb617259c768c9cdc8d537",
+                "reference": "916db7948ca6772d54bb617259c768c9cdc8d537",
+                "shasum": ""
+            },
+            "require": {
+                "bacon/bacon-qr-code": "^2.0",
+                "ext-gd": "*",
+                "php": ">=7.2|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1",
+                "phpunit/phpunit": "~9"
+            },
+            "suggest": {
+                "ext-imagick": "Allows the generation of PNG QrCodes.",
+                "illuminate/support": "Allows for use within Laravel."
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SimpleSoftwareIO\\QrCode\\QrCodeServiceProvider"
+                    ],
+                    "aliases": {
+                        "QrCode": "SimpleSoftwareIO\\QrCode\\Facades\\QrCode"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SimpleSoftwareIO\\QrCode\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simple Software LLC",
+                    "email": "support@simplesoftware.io"
+                }
+            ],
+            "description": "Simple QrCode is a QR code generator made for Laravel.",
+            "homepage": "https://www.simplesoftware.io/#/docs/simple-qrcode",
+            "keywords": [
+                "Simple",
+                "generator",
+                "laravel",
+                "qrcode",
+                "wrapper"
+            ],
+            "support": {
+                "issues": "https://github.com/SimpleSoftwareIO/simple-qrcode/issues",
+                "source": "https://github.com/SimpleSoftwareIO/simple-qrcode/tree/4.2.0"
+            },
+            "time": "2021-02-08T20:43:55+00:00"
         },
         {
             "name": "spatie/laravel-package-tools",
@@ -5877,109 +6020,6 @@
                 }
             ],
             "time": "2020-11-03T09:10:25+00:00"
-        },
-        {
-            "name": "spomky-labs/pki-framework",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Spomky-Labs/pki-framework.git",
-                "reference": "969f3554c49ba7ed6fa603576f1f205e7d66a00c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Spomky-Labs/pki-framework/zipball/969f3554c49ba7ed6fa603576f1f205e7d66a00c",
-                "reference": "969f3554c49ba7ed6fa603576f1f205e7d66a00c",
-                "shasum": ""
-            },
-            "require": {
-                "brick/math": "^0.10",
-                "ext-mbstring": "*",
-                "php": ">=8.1"
-            },
-            "require-dev": {
-                "ekino/phpstan-banned-code": "^1.0",
-                "ext-gmp": "*",
-                "ext-openssl": "*",
-                "infection/infection": "^0.26",
-                "php-parallel-lint/php-parallel-lint": "^1.3",
-                "phpstan/phpstan": "^1.8",
-                "phpstan/phpstan-beberlei-assert": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.1",
-                "phpstan/phpstan-strict-rules": "^1.3",
-                "rector/rector": "0.15.0",
-                "roave/security-advisories": "dev-latest",
-                "symfony/phpunit-bridge": "^6.1",
-                "symplify/easy-coding-standard": "^11.1",
-                "thecodingmachine/phpstan-safe-rule": "^1.2"
-            },
-            "suggest": {
-                "ext-bcmath": "For better performance (or GMP)",
-                "ext-gmp": "For better performance (or BCMath)",
-                "ext-openssl": "For OpenSSL based cyphering"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SpomkyLabs\\Pki\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Joni Eskelinen",
-                    "email": "jonieske@gmail.com",
-                    "role": "Original developer"
-                }
-            ],
-            "description": "A PHP framework for managing Public Key Infrastructures. It comprises X.509 public key certificates, attribute certificates, certification requests and certification path validation.",
-            "homepage": "https://github.com/spomky-labs/pki-framework",
-            "keywords": [
-                "DER",
-                "Private Key",
-                "ac",
-                "algorithm identifier",
-                "asn.1",
-                "asn1",
-                "attribute certificate",
-                "certificate",
-                "certification request",
-                "cryptography",
-                "csr",
-                "decrypt",
-                "ec",
-                "encrypt",
-                "pem",
-                "pkcs",
-                "public key",
-                "rsa",
-                "sign",
-                "signature",
-                "verify",
-                "x.509",
-                "x.690",
-                "x509",
-                "x690"
-            ],
-            "support": {
-                "issues": "https://github.com/Spomky-Labs/pki-framework/issues",
-                "source": "https://github.com/Spomky-Labs/pki-framework/tree/1.0.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/Spomky",
-                    "type": "github"
-                },
-                {
-                    "url": "https://www.patreon.com/FlorentMorselli",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2022-12-14T21:48:24+00:00"
         },
         {
             "name": "symfony/console",
@@ -6508,16 +6548,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v6.2.5",
+            "version": "v6.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "9d081ead9d3432e2e8002178d14c4c9dd4b8ffbf"
+                "reference": "e8dd1f502bc2b3371d05092aa233b064b03ce7ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/9d081ead9d3432e2e8002178d14c4c9dd4b8ffbf",
-                "reference": "9d081ead9d3432e2e8002178d14c4c9dd4b8ffbf",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/e8dd1f502bc2b3371d05092aa233b064b03ce7ed",
+                "reference": "e8dd1f502bc2b3371d05092aa233b064b03ce7ed",
                 "shasum": ""
             },
             "require": {
@@ -6566,7 +6606,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v6.2.5"
+                "source": "https://github.com/symfony/http-foundation/tree/v6.2.6"
             },
             "funding": [
                 {
@@ -6582,20 +6622,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-01T08:38:09+00:00"
+            "time": "2023-01-30T15:46:28+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v6.2.5",
+            "version": "v6.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "f68aaa11eee6b21c99bce0f3d98815924888fe62"
+                "reference": "7122db07b0d8dbf0de682267c84217573aee3ea7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/f68aaa11eee6b21c99bce0f3d98815924888fe62",
-                "reference": "f68aaa11eee6b21c99bce0f3d98815924888fe62",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/7122db07b0d8dbf0de682267c84217573aee3ea7",
+                "reference": "7122db07b0d8dbf0de682267c84217573aee3ea7",
                 "shasum": ""
             },
             "require": {
@@ -6677,7 +6717,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v6.2.5"
+                "source": "https://github.com/symfony/http-kernel/tree/v6.2.6"
             },
             "funding": [
                 {
@@ -6693,7 +6733,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-24T15:33:24+00:00"
+            "time": "2023-02-01T08:32:25+00:00"
         },
         {
             "name": "symfony/mailer",
@@ -8265,6 +8305,142 @@
             "time": "2023-01-20T17:45:48+00:00"
         },
         {
+            "name": "thecodingmachine/safe",
+            "version": "v0.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/safe.git",
+                "reference": "4e8f840f0a0a2ea167813c3994a7fc527c3c2182"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/4e8f840f0a0a2ea167813c3994a7fc527c3c2182",
+                "reference": "4e8f840f0a0a2ea167813c3994a7fc527c3c2182",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.10.3",
+                "squizlabs/php_codesniffer": "^3.2",
+                "thecodingmachine/phpstan-strict-rules": "^0.10.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "generated/apache.php",
+                    "generated/apc.php",
+                    "generated/apcu.php",
+                    "generated/array.php",
+                    "generated/bzip2.php",
+                    "generated/classobj.php",
+                    "generated/com.php",
+                    "generated/cubrid.php",
+                    "generated/curl.php",
+                    "generated/datetime.php",
+                    "generated/dir.php",
+                    "generated/eio.php",
+                    "generated/errorfunc.php",
+                    "generated/exec.php",
+                    "generated/fileinfo.php",
+                    "generated/filesystem.php",
+                    "generated/filter.php",
+                    "generated/fpm.php",
+                    "generated/ftp.php",
+                    "generated/funchand.php",
+                    "generated/gmp.php",
+                    "generated/gnupg.php",
+                    "generated/hash.php",
+                    "generated/ibase.php",
+                    "generated/ibmDb2.php",
+                    "generated/iconv.php",
+                    "generated/image.php",
+                    "generated/imap.php",
+                    "generated/info.php",
+                    "generated/ingres-ii.php",
+                    "generated/inotify.php",
+                    "generated/json.php",
+                    "generated/ldap.php",
+                    "generated/libevent.php",
+                    "generated/libxml.php",
+                    "generated/lzf.php",
+                    "generated/mailparse.php",
+                    "generated/mbstring.php",
+                    "generated/misc.php",
+                    "generated/msql.php",
+                    "generated/mssql.php",
+                    "generated/mysql.php",
+                    "generated/mysqli.php",
+                    "generated/mysqlndMs.php",
+                    "generated/mysqlndQc.php",
+                    "generated/network.php",
+                    "generated/oci8.php",
+                    "generated/opcache.php",
+                    "generated/openssl.php",
+                    "generated/outcontrol.php",
+                    "generated/password.php",
+                    "generated/pcntl.php",
+                    "generated/pcre.php",
+                    "generated/pdf.php",
+                    "generated/pgsql.php",
+                    "generated/posix.php",
+                    "generated/ps.php",
+                    "generated/pspell.php",
+                    "generated/readline.php",
+                    "generated/rrd.php",
+                    "generated/sem.php",
+                    "generated/session.php",
+                    "generated/shmop.php",
+                    "generated/simplexml.php",
+                    "generated/sockets.php",
+                    "generated/sodium.php",
+                    "generated/solr.php",
+                    "generated/spl.php",
+                    "generated/sqlsrv.php",
+                    "generated/ssdeep.php",
+                    "generated/ssh2.php",
+                    "generated/stats.php",
+                    "generated/stream.php",
+                    "generated/strings.php",
+                    "generated/swoole.php",
+                    "generated/uodbc.php",
+                    "generated/uopz.php",
+                    "generated/url.php",
+                    "generated/var.php",
+                    "generated/xdiff.php",
+                    "generated/xml.php",
+                    "generated/xmlrpc.php",
+                    "generated/yaml.php",
+                    "generated/yaz.php",
+                    "generated/zip.php",
+                    "generated/zlib.php",
+                    "lib/special_cases.php"
+                ],
+                "psr-4": {
+                    "Safe\\": [
+                        "lib/",
+                        "generated/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
+            "support": {
+                "issues": "https://github.com/thecodingmachine/safe/issues",
+                "source": "https://github.com/thecodingmachine/safe/tree/v0.1.16"
+            },
+            "time": "2019-06-25T08:45:33+00:00"
+        },
+        {
             "name": "tijsverkoyen/css-to-inline-styles",
             "version": "2.2.6",
             "source": {
@@ -8477,30 +8653,42 @@
         },
         {
             "name": "web-token/jwt-core",
-            "version": "3.1.5",
+            "version": "v2.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-core.git",
-                "reference": "c33d69d7a8bd4f782f289560bf75b5eac331b53c"
+                "reference": "0909efa4fe2c3e2d537922b3ea1b65eb8203686c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-core/zipball/c33d69d7a8bd4f782f289560bf75b5eac331b53c",
-                "reference": "c33d69d7a8bd4f782f289560bf75b5eac331b53c",
+                "url": "https://api.github.com/repos/web-token/jwt-core/zipball/0909efa4fe2c3e2d537922b3ea1b65eb8203686c",
+                "reference": "0909efa4fe2c3e2d537922b3ea1b65eb8203686c",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.9|^0.10",
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "paragonie/constant_time_encoding": "^2.4",
-                "php": ">=8.1",
-                "spomky-labs/pki-framework": "^1.0"
+                "fgrosse/phpasn1": "^2.0",
+                "php": ">=7.2",
+                "spomky-labs/base64url": "^1.0|^2.0"
             },
             "conflict": {
                 "spomky-labs/jose": "*"
             },
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
+            },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "v1.0": "1.0.x-dev",
+                    "v1.1": "1.1.x-dev",
+                    "v1.2": "1.2.x-dev",
+                    "v1.3": "1.3.x-dev",
+                    "v2.0": "2.0.x-dev",
+                    "v2.1": "2.1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Jose\\Component\\Core\\": ""
@@ -8541,7 +8729,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-core/tree/3.1.5"
+                "source": "https://github.com/web-token/jwt-core/tree/v2.2"
             },
             "funding": [
                 {
@@ -8549,28 +8737,27 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-12-28T05:45:38+00:00"
+            "time": "2020-08-22T13:17:25+00:00"
         },
         {
             "name": "web-token/jwt-key-mgmt",
-            "version": "3.1.5",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-key-mgmt.git",
-                "reference": "dec3ba60344bfda18e36de78fb80a2cdd8f04df5"
+                "reference": "0b116379515700d237b4e5de86879078ccb09d8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-key-mgmt/zipball/dec3ba60344bfda18e36de78fb80a2cdd8f04df5",
-                "reference": "dec3ba60344bfda18e36de78fb80a2cdd8f04df5",
+                "url": "https://api.github.com/repos/web-token/jwt-key-mgmt/zipball/0b116379515700d237b4e5de86879078ccb09d8a",
+                "reference": "0b116379515700d237b4e5de86879078ccb09d8a",
                 "shasum": ""
             },
             "require": {
                 "ext-openssl": "*",
-                "php": ">=8.1",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
-                "web-token/jwt-core": "^3.0"
+                "web-token/jwt-core": "^2.0"
             },
             "suggest": {
                 "ext-sodium": "Sodium is required for OKP key creation, EdDSA signature algorithm and ECDH-ES key encryption with OKP keys",
@@ -8619,7 +8806,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-key-mgmt/tree/3.1.5"
+                "source": "https://github.com/web-token/jwt-key-mgmt/tree/v2.2.11"
             },
             "funding": [
                 {
@@ -8627,25 +8814,24 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-12-23T13:35:01+00:00"
+            "time": "2021-03-17T14:55:52+00:00"
         },
         {
             "name": "web-token/jwt-signature",
-            "version": "3.1.5",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-signature.git",
-                "reference": "dd51c216df7e40f3938e749254c325863dd45e14"
+                "reference": "015b59aaf3b6e8fb9f5bd1338845b7464c7d8103"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-signature/zipball/dd51c216df7e40f3938e749254c325863dd45e14",
-                "reference": "dd51c216df7e40f3938e749254c325863dd45e14",
+                "url": "https://api.github.com/repos/web-token/jwt-signature/zipball/015b59aaf3b6e8fb9f5bd1338845b7464c7d8103",
+                "reference": "015b59aaf3b6e8fb9f5bd1338845b7464c7d8103",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
-                "web-token/jwt-core": "^3.0"
+                "web-token/jwt-core": "^2.1"
             },
             "suggest": {
                 "web-token/jwt-signature-algorithm-ecdsa": "ECDSA Based Signature Algorithms",
@@ -8696,7 +8882,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-signature/tree/3.1.5"
+                "source": "https://github.com/web-token/jwt-signature/tree/v2.2.11"
             },
             "funding": [
                 {
@@ -8704,26 +8890,25 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-12-23T13:35:01+00:00"
+            "time": "2021-03-01T19:55:28+00:00"
         },
         {
             "name": "web-token/jwt-signature-algorithm-ecdsa",
-            "version": "3.1.5",
+            "version": "v2.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-signature-algorithm-ecdsa.git",
-                "reference": "e09159600f19832cf4a68921e7299e564bc0eaf9"
+                "reference": "44cbbb4374c51f1cf48b82ae761efbf24e1a8591"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-signature-algorithm-ecdsa/zipball/e09159600f19832cf4a68921e7299e564bc0eaf9",
-                "reference": "e09159600f19832cf4a68921e7299e564bc0eaf9",
+                "url": "https://api.github.com/repos/web-token/jwt-signature-algorithm-ecdsa/zipball/44cbbb4374c51f1cf48b82ae761efbf24e1a8591",
+                "reference": "44cbbb4374c51f1cf48b82ae761efbf24e1a8591",
                 "shasum": ""
             },
             "require": {
                 "ext-openssl": "*",
-                "php": ">=8.1",
-                "web-token/jwt-signature": "^3.0"
+                "web-token/jwt-signature": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -8766,7 +8951,7 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-signature-algorithm-ecdsa/tree/3.1.5"
+                "source": "https://github.com/web-token/jwt-signature-algorithm-ecdsa/tree/v2.2.11"
             },
             "funding": [
                 {
@@ -8774,31 +8959,38 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-08-04T21:04:09+00:00"
+            "time": "2021-01-21T19:18:03+00:00"
         },
         {
             "name": "web-token/jwt-util-ecc",
-            "version": "3.1.5",
+            "version": "v2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-token/jwt-util-ecc.git",
-                "reference": "d0550dbdb2f0f652b8a45530c25ac485612be9f6"
+                "reference": "41d6612876b9cb001bb36883100c322130958432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-token/jwt-util-ecc/zipball/d0550dbdb2f0f652b8a45530c25ac485612be9f6",
-                "reference": "d0550dbdb2f0f652b8a45530c25ac485612be9f6",
+                "url": "https://api.github.com/repos/web-token/jwt-util-ecc/zipball/41d6612876b9cb001bb36883100c322130958432",
+                "reference": "41d6612876b9cb001bb36883100c322130958432",
                 "shasum": ""
             },
             "require": {
-                "brick/math": "^0.9|^0.10",
-                "php": ">=8.1"
+                "thecodingmachine/safe": "^0.1.14"
             },
-            "suggest": {
-                "ext-bcmath": "GMP or BCMath is highly recommended to improve the library performance",
-                "ext-gmp": "GMP or BCMath is highly recommended to improve the library performance"
+            "require-dev": {
+                "phpunit/phpunit": "^8.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "v1.0": "1.0.x-dev",
+                    "v1.1": "1.1.x-dev",
+                    "v1.2": "1.2.x-dev",
+                    "v1.3": "1.3.x-dev",
+                    "v2.0": "2.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Jose\\Component\\Core\\Util\\Ecc\\": ""
@@ -8815,7 +9007,7 @@
                 },
                 {
                     "name": "All contributors",
-                    "homepage": "https://github.com/web-token/jwt-framework/contributors"
+                    "homepage": "https://github.com/web-token/jwt-core/contributors"
                 }
             ],
             "description": "ECC Tools for the JWT Framework.",
@@ -8839,15 +9031,9 @@
                 "symfony"
             ],
             "support": {
-                "source": "https://github.com/web-token/jwt-util-ecc/tree/3.1.5"
+                "source": "https://github.com/web-token/jwt-util-ecc/tree/v2.0.4"
             },
-            "funding": [
-                {
-                    "url": "https://www.patreon.com/FlorentMorselli",
-                    "type": "patreon"
-                }
-            ],
-            "time": "2022-08-22T17:49:29+00:00"
+            "time": "2019-06-22T13:06:07+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -9229,16 +9415,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "0e7ffdb0af871be10d798e234772ea5d4020ae4a"
+                "reference": "80ddf23a5d97825e79bb1018eebb6f3f985d4fa8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/0e7ffdb0af871be10d798e234772ea5d4020ae4a",
-                "reference": "0e7ffdb0af871be10d798e234772ea5d4020ae4a",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/80ddf23a5d97825e79bb1018eebb6f3f985d4fa8",
+                "reference": "80ddf23a5d97825e79bb1018eebb6f3f985d4fa8",
                 "shasum": ""
             },
             "require": {
@@ -9249,7 +9435,7 @@
                 "php": "^8.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "~3.13.1",
+                "friendsofphp/php-cs-fixer": "^3.14",
                 "illuminate/view": "^9.32.0",
                 "laravel-zero/framework": "^9.2.0",
                 "mockery/mockery": "^1.5.1",
@@ -9291,20 +9477,20 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2023-01-10T20:03:42+00:00"
+            "time": "2023-01-31T15:50:45+00:00"
         },
         {
             "name": "laravel/sail",
-            "version": "v1.18.1",
+            "version": "v1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "a64f78a4ab86c04a4c5de39bea20a8d36ad48a22"
+                "reference": "4f230634a3163f3442def6a4e6ffdb02b02e14d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/a64f78a4ab86c04a4c5de39bea20a8d36ad48a22",
-                "reference": "a64f78a4ab86c04a4c5de39bea20a8d36ad48a22",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/4f230634a3163f3442def6a4e6ffdb02b02e14d6",
+                "reference": "4f230634a3163f3442def6a4e6ffdb02b02e14d6",
                 "shasum": ""
             },
             "require": {
@@ -9351,7 +9537,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2023-01-11T14:35:04+00:00"
+            "time": "2023-01-31T13:37:57+00:00"
         },
         {
             "name": "mockery/mockery",
