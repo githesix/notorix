@@ -237,6 +237,7 @@
         'libel' => 'Sexe',
         'type' => 'select',
         'options' => [
+	    NULL => '',
             'F' => 'Féminin',
             'M' => 'Masculin',
         ],
@@ -708,6 +709,7 @@
         'libel' => 'Langue moderne 2',
         'type' => 'select',
         'options' => [
+	    NULL => '',
             'EN' => 'Anglais',
             'DE' => 'Allemand',
             'NL' => 'Néerlandais',
@@ -734,6 +736,7 @@
         'libel' => 'Langue moderne 3',
         'type' => 'select',
         'options' => [
+	    NULL => '',
             'EN' => 'Anglais',
             'DE' => 'Allemand',
             'NL' => 'Néerlandais',
@@ -781,6 +784,7 @@
         'libel' => 'Type responsable 1',
         'type' => 'select',
         'options' => [
+	    NULL => '',
             'Mère' => 'Mère',
             'Père' => 'Père',
             'Tuteur' => 'Tuteur',
@@ -850,6 +854,7 @@
         'libel' => 'Sexe',
         'type' => 'select',
         'options' => [
+	    NULL => '',
             'F' => 'Féminin',
             'M' => 'Masculin',
         ],
@@ -1221,6 +1226,7 @@
         'libel' => 'Type responsable 2',
         'type' => 'select',
         'options' => [
+	    NULL => '',
             'Mère' => 'Mère',
             'Père' => 'Père',
             'Tuteur' => 'Tuteur',
@@ -1290,6 +1296,7 @@
         'libel' => 'Sexe',
         'type' => 'select',
         'options' => [
+	    NULL => '',
             'F' => 'Féminin',
             'M' => 'Masculin',
         ],
