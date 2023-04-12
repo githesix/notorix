@@ -123,6 +123,9 @@ class BoUsers extends LivewireDatatable
         $this->init();
     }
 
+    /**
+     * Seems unused, duplicate of app/Http/Livewire/BoModalEditUser/ResetPasswordModal()
+     */
     public function resetPassword($datas) {
         $email = $datas['email'];
         $response = Password::broker()->sendResetLink(['email'=>$email]);

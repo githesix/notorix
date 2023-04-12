@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Notifications\Notification;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
@@ -99,6 +100,21 @@ class User extends Authenticatable implements MustVerifyEmail
         'deleted' => UserDeleted::class, // e-mail scrambling for further registration
         'updated' => UserUpdated::class,
     ];
+
+    /**
+     * Route notifications for the mail channel.
+     * Avoid confusion with redirected email from exim package
+     *
+     * @return  array<string, string>|string
+     */
+    public function routeNotificationForMail(Notification $notification): array|string
+    {
+        // Return email address only...
+        // return $this->username;
+ 
+        // Return email address and name...
+        return [$this->username => $this->name];
+    }
 
     /**
      * Custom constructor

@@ -81,10 +81,13 @@ class BoModalEditUser extends ModalComponent
         info(__(":admin cancelled email verification for :user (:email)", ["admin" => Auth::user()->name, "user" => $this->user->name, "email" => $this->user->email]));
     }
 
+    /**
+     * "datas" => ["id" => $user->id, "name" => $user->name, "email" => $user->username] (resources/views/livewire/bo-modal-edit-user.blade.php)
+     */
     public function resetPasswordModal($datas)
     {
         $email = $datas['email'];
-        $response = Password::broker()->sendResetLink(['email'=>$email]);
+        $response = Password::sendResetLink(['email'=>$email]);
         if ($response == Password::RESET_LINK_SENT) {
             info(__(':admin sent password reset link to :user', ["admin" => Auth::user()->name, "user" => $email]));
             return true;

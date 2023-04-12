@@ -66,7 +66,7 @@
                     <x-jet-input id="iban" class="block mt-1 w-full" type="text" name="iban" wire:model="user.iban" />
                 </div>
                 <div class="md:w-1/2 md:pl-2 md:mt-0 mt-4 w-full self-end">
-                    <button type="button" class="btn btn-rougis" title="{{ __('Reset password') }}" wire:click='$emit("openModal", "modal-confirm", {{ json_encode(["title" => __("Reset password"), "body" => __("Send reset password link to")." ".$user->name." (".$user->email.")", "datas" => ["id" => $user->id, "name" => $user->name, "email" => $user->email], "callback" => "resetPasswordModal"]) }})'>{{ __('Reset password') }}</button>
+                    <button type="button" class="btn btn-rougis" title="{{ __('Reset password') }}" wire:click='$emit("openModal", "modal-confirm", {{ json_encode(["title" => __("Reset password"), "body" => __("Send reset password link to")." ".$user->name." (".$user->username.")", "datas" => ["id" => $user->id, "name" => $user->name, "email" => $user->username], "callback" => "resetPasswordModal"]) }})'>{{ __('Reset password') }}</button>
                 </div>
             </div>
 
