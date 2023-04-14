@@ -9,8 +9,10 @@ use Illuminate\Support\Facades\Event;
 use App\Events\UserDeleted;
 use App\Listeners\DeletedUser;
 use App\Events\UserUpdated;
+use App\Listeners\SamlAssertionAttributes;
 use App\Listeners\UpdatedUser;
 use App\Listeners\UserEventSubscriber;
+use CodeGreenCreative\SamlIdp\Events\Assertion;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -28,6 +30,9 @@ class EventServiceProvider extends ServiceProvider
         ],
         UserUpdated::class => [
             UpdatedUser::class,
+        ],
+        Assertion::class => [
+            SamlAssertionAttributes::class, // Adds FirstName, LastName, Role... to SAML attributes
         ],
     ];
 

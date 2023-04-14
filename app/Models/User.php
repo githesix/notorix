@@ -184,6 +184,19 @@ class User extends Authenticatable implements MustVerifyEmail
         $this->setRole(128, $value);
     }
 
+    public function getSamlroleAttribute()
+    {
+        if ($this->hasRole(2)) {
+            return 'student';
+        }
+        if ($this->role & 176) {
+            return 'staff';
+        }
+        if ($this->hasRole(4)) {
+            return 'parent';
+        }
+    }
+
     /**
      * UpdateUserProfileInformation updates username instead
      * of email, to prevent conflicts with notorix-exim plugin.
