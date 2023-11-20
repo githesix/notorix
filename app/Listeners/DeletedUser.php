@@ -31,9 +31,9 @@ class DeletedUser
         info(__(":admin deleted user :user", [
             'admin' => auth()->user()->name ?? 'Unauthenticated user',
              'user' => "{$user->name} ({$user->email})"]));
-        $email = '_'.rand().'_'.$user->email;
-        $user->email = $email;
-        $user->username = $email;
+        $hasard = '_'.substr(str_shuffle(MD5(microtime())), 0, 6).'_';
+        $user->email = $hasard.$user->email;
+        $user->username = $hasard.$user->username;
         $user->save();
     }
 }
